@@ -6,90 +6,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
     <header>
         <div class="cont-main">
-            <nav>
+            <nav class="navigation">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li class="selected"><a href="#home">Home</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contacts</a></li>
                 </ul>
             </nav>
-            <hr>
-        </div>
 
+        </div>
     </header>
     <main>
         <section id="home">
-            <h1>Denis Novik</h1>
             <div class="cont-main">
-                <img src="assets/images/about.jpg" alt="about">
+                <h1 class="title">Denis Novik</h1>
+                <img class="banner" src="assets/images/about.jpg" alt="about">
             </div>
         </section>
         <section id="about">
-            <h2>About Me</h2>
             <div class="cont-main">
-                <p>Hi, I'm Denis – UX/UI designer from Minsk.</p>
-                <p>I'm interested in design and everything connected with it.</p>
-
-                <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
-                <p>Ready to implement excellent projects with wonderful people.</p>
+                <h2 class="title">About me</h2>
+                <div>
+                    <p>Hi, I'm Denis – UX/UI designer from Minsk.</p>
+                    <p>I'm interested in design and everything connected with it.</p>
+                </div>
+                <div>
+                    <p class="medium-p">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+                </div>
+                <div>
+                    <p class="small-p">Ready to implement excellent projects with wonderful people.</p>
+                </div>
             </div>
         </section>
         <section id="skills">
-            <h2>Skills</h2>
             <div class="cont-main">
-                <p>I work in such programs as</p>
-                <div>
-                    <img src="assets/images/photoshop.png" alt="photoshop">
-                    <span>Adobe Photoshop</span>
-                    <img src="assets/images/rating_ps.png" alt="">
+                <h2 class="title">Skills</h2>
+                <div class="skills-desc">
+                    <p>I work in such programs as</p>
                 </div>
-
-                <div>
-                    <img src="assets/images/illustrator.png" alt="illustrator">
-                    <span>Adobe Illustrator</span>
-                    <img src="assets/images/rating_il.png" alt="">
+                <div class="skill-elem skill-first">
+                    <img class="skill-ico" src="assets/images/photoshop.png" alt="photoshop">
+                    <div class="skill-name">
+                        <p>Adobe</p>
+                        <p>Photoshop</p>
+                    </div>
+                    <img class="rating" src="assets/images/rating_ps.png" alt="">
                 </div>
-
-
-                <div>
-                    <img src="assets/images/aftereffect.png" alt="aftereffect">
-                    <span>Adobe After Effects</span>
-                    <img src="assets/images/rating_il.png" alt="">
+                <div class="skill-elem skill-center">
+                    <img class="skill-ico" src="assets/images/illustrator.png" alt="illustrator">
+                    <div class="skill-name">
+                        <p>Adobe</p>
+                        <p>Illustrator</p>
+                    </div>
+                    <img class="rating" src="assets/images/rating_il.png" alt="">
                 </div>
-
-
-                <div>
-                    <img src="assets/images/figma.png" alt="figma">
-                    <span>Figma</span>
-                    <img src="assets/images/rating_il.png" alt="">
+                <div class="skill-elem skill-center">
+                    <img class="skill-ico" src="assets/images/aftereffect.png" alt="aftereffect">
+                    <div class="skill-name">
+                        <p>Adobe</p>
+                        <p>After Effects</p>
+                    </div>
+                    <img class="rating" src="assets/images/rating_il.png" alt="">
+                </div>
+                <div class="skill-elem skill-last">
+                    <img class="skill-ico" src="assets/images/figma.png" alt="figma">
+                    <div class="skill-name">
+                        <p>Figma</p>
+                    </div>
+                    <img class="rating" src="assets/images/rating_il.png" alt="">
                 </div>
 
             </div>
         </section>
         <section id="portfolio">
-            <h2>Portfolio</h2>
+
             <div class="cont-main">
-                <div>
+                <h2 class="title">Portfolio</h2>
+                <div class="portfolio-elem">
                     <img src="assets/images/fashion_shop.png" alt="fashion shop">
-                    <a href="#">Online fashion store - Homepage</a>
+                    <div class="portf-link">
+                        <a href="#" target="_blank" rel="noindex nofollow noreferrer">Online fashion store - Homepage</a>
+                    </div>
+                    
                 </div>
 
-                <div>
+                <div class="portfolio-elem center-elem">
                     <img src="assets/images/reebok_web.png" alt="reebok web">
-                    <a href="#">Reebok Store - Concept</a>
+                    <div class="portf-link">
+                        <a href="#" target="_blank" rel="noindex nofollow noreferrer">Reebok Store - Concept</a>
+                    </div>
+                    
                 </div>
 
-                <div>
+                <div class="portfolio-elem">
                     <img src="assets/images/braun_landing.png" alt="braun landing">
-                    <a href="#">Braun Landing Page - Concept</a>
+                    <div class="portf-link">
+                        <a href="#" target="_blank" rel="noindex nofollow noreferrer">Braun Landing Page - Concept</a>
+                    </div>
                 </div>
 
             </div>
@@ -97,8 +120,8 @@
     </main>
     <footer id="contact">
         <div class="cont-main">
-            <div>
-                <h2>Contacts</h2>
+            <div class="cont-info">
+                <h2 class="title">Contacts</h2>
                 <p>Want to know more or just chat?</p>
                 <p>You are welcome!</p>
             </div>
@@ -109,7 +132,7 @@
                 <a href="#" target="_blank" rel="noindex nofollow noreferrer">
                     <img src="assets/images/linkdin.png" alt="linkedIn">
                 </a>
-                <a href="#" target="_blank" rel="noindex nofollow noreferrer">
+                <a class="socials-sec" href="#" target="_blank" rel="noindex nofollow noreferrer">
                     <img src="assets/images/insagram.png" alt="insagram">
                 </a>
                 <a href="#" target="_blank" rel="noindex nofollow noreferrer">
