@@ -76,16 +76,6 @@ section .banner{
     text-align: center;
 }
 
-.title {
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 46px;
-    left: 17.23%;
-    right: 60.07%;
-    top: 2.32%;
-    bottom: 96.32%;
-}
-
 /*------------------navigation---------------------*/
 
 .navigation {
