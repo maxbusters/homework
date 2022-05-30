@@ -76,6 +76,11 @@ section .banner{
     text-align: center;
 }
 
+.title {
+    font-weight: 700;
+    font-size: 34px;
+}
+
 /*------------------navigation---------------------*/
 
 .navigation {
