@@ -81,7 +81,6 @@ a{
 }
 
 .cont-msg {
-    display: inline-block;
     font-size: 27px;
     margin: 0 auto;
     max-width: 230px;
