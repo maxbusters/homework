@@ -90,6 +90,10 @@ a{
     letter-spacing: 0.1em;
 }
 
+.cont-msg p {
+    display: inline-block;
+}
+
 .cont-social {
     max-width: 230px;
     text-align: center;
