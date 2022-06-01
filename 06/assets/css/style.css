@@ -81,7 +81,7 @@ a{
 }
 
 .cont-msg {
-    font-size: 14px;
+    font-size: 20pt;
     margin: 0 auto;
     max-width: 228px;
     padding: 20px 40px;
@@ -102,6 +102,7 @@ a{
 }
 
 .cont-copy {
+    font-size: 15pt;
     padding-top: 70px;
     text-align: center;
     letter-spacing: 0.1em;
