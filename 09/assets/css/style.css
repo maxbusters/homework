@@ -66,6 +66,8 @@ table {
 
 .header .container {
     padding-top: 13px;
+    line-height: 53px;
+
 }
 
 .header .lang-cont {
@@ -83,6 +85,9 @@ table {
 
 .header .col {
     display: inline-block;
+    vertical-align: middle;
+    line-height: 30px;
+    
 }
 
 .header .lang-cont{
@@ -121,7 +126,6 @@ table {
     font-weight: 300;
     vertical-align: top;
     font-size: 16px;
-    line-height: 30px;
     padding-left: 10px;
     display: inline-block;
 }
@@ -129,7 +133,7 @@ table {
 
 .main .text-cont {
     font-size: 28px;
-    line-height: 48px;
+    line-height: 50px;
     font-family: 'PT Sans';
 }
 
