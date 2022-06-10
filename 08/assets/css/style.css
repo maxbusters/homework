@@ -193,7 +193,6 @@ h1 {
 .list-cont label{
 	display: inline-block;
 	color: white;
-	background-color: #88839E;
 	width: 100%;
 	padding-top: 11px;
 	padding-bottom: 13px;
@@ -206,18 +205,14 @@ h1 {
 
 .list-cont label:hover {
 	background: #625E77;
-	margin-top: 3px;
-	margin-bottom: 3px;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
 }
 
 .list-cont label:active {
 	background-color: #FF8984;
 }
 
-
-.list-cont .dark {
-	background-color: #7A7593;
-}
 
 .list-cont .custom-checkbox {
 	position: absolute;
@@ -282,4 +277,12 @@ h1 {
 	border: 3px solid #625E77;
 }
 
+.list-cont div:nth-child(n){
+	background: #88839E;
+}
+
+.list-cont div:nth-child(2n) {
+	background-color: #7A7593;
+
+} 
 
