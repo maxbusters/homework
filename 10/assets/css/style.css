@@ -230,10 +230,6 @@ footer {
     padding-top: 70px;
 }
 
-footer h2 {
-    font-family: 'Gotham', sans-serif;
-}
-
 footer .flex-cont-nav {
     display: flex;
     flex-direction: row;
