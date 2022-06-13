@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------------------RESET CSS--------------------------------------*/
+
+main {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#features {
+    background-image: url("/assets/images/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+}
+
+.title {
+    width: 539px;
+    display: flex;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 100px;
+}
+
+.flex-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: auto;
+    align-content: start;
+    margin-bottom: 70px;
+}
+
+.flex-el {
+    flex: 0 0 auto;
+    width: 270px;
+}
+
+.flex-el .el-head {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+.flex-el .el-desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.signup-butt {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-butt a {
+    color: white;
+    background: #FF9900;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+    padding: 13px 39.5px;
+    margin-bottom: 75px;
+}
+
+/*-------------------------------Features end---------------------------*/
+/*-------------------------------Footer start---------------------------*/
+
+footer {
+    border-top: 1px solid #BCD0E5;
+    padding-top: 70px;
+}
+
+footer h2 {
+    font-family: 'Gotham', sans-serif;
+}
+
+footer .flex-cont-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .signup-form {
+    width: 340px;
+}
+
+footer .signup-form input {
+    width: 340px;
+    height: 50px;
+    outline: none;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+footer .signup-form input::placeholder {
+    color: #BCD0E5;
+
+}
+
+footer .signup-form button {
+    width: 180px;
+    height: 50px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    background: #FF9900;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+footer .signup-form button:hover,
+.signup-butt a:hover {
+    background: #fdba56;
+}
+
+footer h2 {
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F281E;
+}
+
+footer li a {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+footer li a:hover {
+    color: #FF9900;
+}
+
+footer .footer-nav h2 {
+    margin-bottom: 30px;
+}
+
+footer .footer-nav li:not(:last-child) {
+    margin-bottom: 18px;
+}
