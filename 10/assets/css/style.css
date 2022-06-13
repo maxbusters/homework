@@ -158,7 +158,7 @@ a {
 }
 
 #features {
-    background-image: url("/assets/images/bg.png");
+    background-image: url("https://maxbusters.github.io/homework/10/assets/images/bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: white;
@@ -284,7 +284,7 @@ footer .signup-form button:hover,
 }
 
 footer h2 {
-    font-family: 'Gotham';
+    font-family: 'Gotham', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
