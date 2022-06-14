@@ -1,0 +1,462 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------------------------------END RESET------------------------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #545454;
+}
+
+h2 {
+    color: #1C1C1C;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+hr {
+    border: 1px solid #E4E4E4;
+}
+
+label {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+input,
+select{
+    height: 38px;
+    outline: none;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    padding: 0px 10px;
+    margin-bottom: 7px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #545454;
+}
+
+input:focus,
+select:focus,
+a:focus
+{
+    outline: none;
+    border: 1px solid #007BFF;
+}
+
+input:hover,
+select:hover {
+    border: 1px solid #007BFF;
+}
+
+button:focus {
+    outline: none;
+    filter: drop-shadow(0 0 0.1rem #007BFF);
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    color: orangered;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 55px auto;
+}
+
+.flex-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-cont {
+    width: 570px;
+    border: 1px solid black;
+    padding: 35px 34px 16px 34px;
+}
+
+form .form-el {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: inline-block;
+    width: 245px;
+    padding-bottom: 7px;
+}
+
+form input[type="text"],
+select,
+option {
+    width: 245px;
+}
+
+form label+input[type="email"] {
+    width: 100%;
+}
+
+form .form-el .tips-msg {
+    color: #969696;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+}
+
+
+.input-flex-row div:first-child {
+    margin-right: 10px;
+}
+
+.input-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+/*------------------------------custom gender radio start---------------------------------------*/
+
+.radio-cont {
+    max-width: 80px;
+    padding-bottom: 0px;
+}
+
+
+.radio-el .radio-cont {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 35px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.radio-cont .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.radio-cont:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.radio-cont input:checked~.checkmark {
+    background-color: #007BFF;
+
+}
+
+.radio-cont .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-cont input:checked~.checkmark:after {
+    display: block;
+}
+
+.radio-cont .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.radio-cont>input[type="radio"]:focus+.checkmark {
+    filter: drop-shadow(0 0 0.1rem #007BFF);
+}
+
+
+/*------------------------------custom gender radio end---------------------------------------*/
+/*------------------------------signup button start-------------------------------------------*/
+.signup-butt {
+    height: 38px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+.register .signup-butt {
+    width: 100%;
+}
+
+.signup-butt:hover {
+    background-color: #2a8ffc
+}
+
+/*------------------------------signup button end---------------------------------------------*/
+.country {
+    color: #969696;
+    cursor: pointer;
+}
+
+.country>option {
+    color: #545454;
+}
+
+.terms-block {
+    width: 410;
+    text-align: center;
+}
+
+.terms-bock a {
+    font-family: 'Inter', sans-serif;
+}
+.login-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.login-block div {
+    margin: 20px;
+}
+
+.login-block p{
+    letter-spacing: -0.2px;
+}
+
+.login-block a{
+    font-weight: 500;
+    letter-spacing: -0.1px;
+}
+
+/*------------------------------profle form--------------------------------*/
+.profile .form-el .upload-cont{
+    width: 138px;
+    margin-right: 5px;
+}
+
+.profile .form-el .avatar-cont {
+    margin-right: 20px;
+}
+
+.profile .form-el .upload-cont , .upload-btn{
+    height: 32px;
+    outline: none;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.upload-btn {
+    background-color: white;
+    width: 30px;
+}
+
+.upload-btn img {
+    height: 12px;
+}
+
+.upload-btn:hover{
+    outline: none;
+    border: 1px solid #007BFF !important;
+}
+
+.upload-cont:hover{
+    outline: none;
+    border: 1px solid #007BFF !important;
+}
+
+.profile .form-el .upload-cont input {
+    display: none;
+}
+
+.profile .form-el .upload-cont img {
+    float: right;
+    margin: 6px;
+    display: inline;
+}
+
+.profile .form-el .upload-cont span {
+    line-height: 30px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.profile .avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile .signup-butt{
+    width: 150px;
+}
+
+input:invalid { 
+    border: 1px solid red;
+}
