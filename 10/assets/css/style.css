@@ -226,7 +226,7 @@ a {
 /*-------------------------------Footer start---------------------------*/
 
 footer {
-    border-top: 1px solid #BCD0E5;
+    border-top: 1px solid rgba(188, 208, 229, 0.496913);
     padding-top: 70px;
 }
 
@@ -250,7 +250,7 @@ footer .signup-form input {
     line-height: 20px;
     margin-top: 25px;
     margin-bottom: 25px;
-    border: 1px solid rgba(188, 208, 229, 0.496913);
+    border: 1px solid #BCD0E5;
     border-radius: 4px;
     padding: 0px 10px;
 }
