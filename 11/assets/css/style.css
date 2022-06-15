@@ -405,8 +405,12 @@ form .form-el .tips-msg {
     margin-right: 20px;
 }
 
+.profile .form-el .upload-flex{
+    display: flex;
+}
+
 .profile .form-el .upload-cont , .upload-btn{
-    height: 32px;
+    height: 30px;
     outline: none;
     border: 1px solid #E4E4E4;
     border-radius: 6px;
@@ -448,7 +452,12 @@ form .form-el .tips-msg {
     overflow: hidden;
 }
 
+.profile .form-el .upload-cont + p {
+    padding-top: 9px;
+}
+
 .profile .avatar {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -459,6 +468,13 @@ form .form-el .tips-msg {
     width: 150px;
 }
 
+.profile .form-el .reset-btn {
+    padding-top: 3px;
+} 
+
 input:invalid { 
     border: 1px solid red;
 }
+
+
+

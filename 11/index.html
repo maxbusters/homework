@@ -359,18 +359,22 @@
                             <div class="input-cont avatar-cont">
                                 <img src="assets/images/avatar.png" alt="">
                             </div>
-                            <div class="input-cont">
-                                <label for="avatarFile" class="upload-cont">
-                                    <span id="fileName"></span>
-                                    <img src="assets/images/camera-ico.svg" alt="">
-                                    <input onchange="setFileName();" id="avatarFile" type="file" name="avatar" size="1" accept="image/*">
-                                </label> 
-                                <button class="upload-btn" onclick="resetFileName();">
-                                    <img src="assets/images/trash.png" alt="">
-                                </button>
-                                <p class="tips-msg">
-                                    Up to 1 MB (300x300 px)
-                                </p>
+                            <div class="input-cont upload-flex">
+                                <div>
+                                    <label for="avatarFile" class="upload-cont">
+                                        <span id="fileName"></span>
+                                        <img src="assets/images/camera-ico.svg" alt="">
+                                        <input onchange="setFileName();" id="avatarFile" type="file" name="avatar" size="1" accept="image/*">
+                                    </label>
+                                    <p class="tips-msg">
+                                        Up to 1 MB (300x300 px)
+                                    </p> 
+                                </div>
+                                <div>
+                                    <button class="upload-btn reset-btn" onclick="resetFileName();">
+                                        <img src="assets/images/trash.svg" alt="">
+                                    </button>
+                                </div>   
                             </div>
                         </div>
                         <div class="input-flex-row form-el">
