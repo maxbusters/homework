@@ -300,7 +300,8 @@ form .form-el .tips-msg {
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: #eee;
+    background: white;
+    border: 1px solid #E4E4E4;
     border-radius: 50%;
 }
 
@@ -324,8 +325,8 @@ form .form-el .tips-msg {
 }
 
 .radio-cont .checkmark:after {
-    top: 6px;
-    left: 6px;
+    top: 5px;
+    left: 5px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -339,17 +340,27 @@ form .form-el .tips-msg {
 
 /*------------------------------custom gender radio end---------------------------------------*/
 /*------------------------------signup button start-------------------------------------------*/
-.signup-butt {
-    height: 38px;
+.submit-butt {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+   /*  height: 38px; */
     background-color: #007BFF;
     color: white;
     cursor: pointer;
     border: none;
     border-radius: 6px;
+    
 }
 
-.register .signup-butt {
-    width: 100%;
+.submit-butt--signup {
+   padding: 7px 225px
+}
+
+.submit-butt--update {
+    padding: 7px 50px;
 }
 
 .signup-butt:hover {
