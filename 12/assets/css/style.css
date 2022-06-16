@@ -236,14 +236,18 @@ table {
     padding-top: 10px;
 }
 
-.col-left li {
-    border-bottom: 1px solid #BDBDBD;
+.col-left li a{
     padding: 0px 0px 10px;
-    margin-bottom: 70px;
 }
 
-.col-left li:hover {
-    border-bottom: 3px solid orangered;
+.col-left li {
+    margin-bottom: 70px;
+    padding: 0px 0px 10px;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.col-left li a:hover {
+    color: orangered;
 }
 
 /*------------------------------------------ASIDE END------------------------------------*/
