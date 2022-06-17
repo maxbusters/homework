@@ -365,27 +365,27 @@ main {
 }
 
 .card-cont__socials > .socials__twitter {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/twitter_h.png");
+    background-image: url("../images/twitter_h.png");
 }
 
 .card-cont__socials > .socials__twitter--hover:hover {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/twitter.png");
+    background-image: url("../images/twitter.png");
 }
 
 .card-cont__socials > .socials__facebook {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/facebook_h.png");
+    background-image: url("../images/facebook_h.png");
 }
 
 .card-cont__socials > .socials__facebook--hover:hover {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/facebook.png");
+    background-image: url("../images/facebook.png");
 }
 
 .card-cont__socials > .socials__instagram {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/instagram_h.png");
+    background-image: url("../images/instagram_h.png");
 }
 
 .card-cont__socials > .socials__instagram--hover:hover {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/instagram.png");
+    background-image: url("../images/instagram.png");
 }
 
 
@@ -427,41 +427,41 @@ footer {
 }
 
 .socials__twitter {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/twitter.png");
+    background-image: url("../images/twitter.png");
 }
 
 .socials__twitter--hover:hover {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/twitter_h.png");
+    background-image: url("../images/twitter_h.png");
 }
 
 .socials__facebook {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/facebook.png");
+    background-image: url("../images/facebook.png");
 }
 
 .socials__facebook--hover:hover {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/facebook_h.png");
+    background-image: url("../images/facebook_h.png");
 }
 
 .socials__instagram {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/instagram.png");
+    background-image: url("../images/instagram.png");
 }
 
 .socials__instagram--hover:hover {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/instagram_h.png");
+    background-image: url("../images/instagram_h.png");
 }
 
 .socials__linkedin {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/linkedin.png");
+    background-image: url("../images/linkedin.png");
 }
 
 .socials__linkedin--hover:hover {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/linkedin_h.png");
+    background-image: url("../images/linkedin_h.png");
 }
 
 .socials__telegram {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/telegram.png");
+    background-image: url("../images/telegram.png");
 }
 
 .socials__telegram--hover:hover {
-    background-image: url("https://maxbusters.github.io/homework/13/assets/images/telegram_h.png");
+    background-image: url("../images/telegram_h.png");
 }
