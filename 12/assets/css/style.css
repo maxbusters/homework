@@ -253,7 +253,6 @@ table {
 /*------------------------------------------ASIDE END------------------------------------*/
 .main {
     margin-top: 150px;
-    padding-bottom: 90px;
 }
 
 .flex-container {
@@ -272,7 +271,6 @@ table {
 .main .col-right {
     width: 785px;
     padding-left: 30px;
-    padding-bottom: 150px;
 }
 
 
