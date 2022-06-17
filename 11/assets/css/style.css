@@ -168,7 +168,7 @@ label {
 }
 
 input,
-select{
+select {
     height: 38px;
     outline: none;
     border: 1px solid #E4E4E4;
@@ -184,8 +184,7 @@ select{
 
 input:focus,
 select:focus,
-a:focus
-{
+a:focus {
     outline: none;
     border: 1px solid #007BFF;
 }
@@ -346,17 +345,18 @@ form .form-el .tips-msg {
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
-   /*  height: 38px; */
+    /*  height: 38px; */
     background-color: #007BFF;
     color: white;
     cursor: pointer;
     border: none;
     border-radius: 6px;
-    
+
 }
 
 .submit-butt--signup {
-   padding: 7px 225px
+    width: 100%;
+    padding: 7px 50px;
 }
 
 .submit-butt--update {
@@ -385,6 +385,7 @@ form .form-el .tips-msg {
 .terms-bock a {
     font-family: 'Inter', sans-serif;
 }
+
 .login-block {
     display: flex;
     flex-direction: row;
@@ -397,17 +398,17 @@ form .form-el .tips-msg {
     margin: 20px;
 }
 
-.login-block p{
+.login-block p {
     letter-spacing: -0.2px;
 }
 
-.login-block a{
+.login-block a {
     font-weight: 500;
     letter-spacing: -0.1px;
 }
 
 /*------------------------------profle form--------------------------------*/
-.profile .form-el .upload-cont{
+.profile .form-el .upload-cont {
     width: 138px;
     margin-right: 5px;
 }
@@ -416,11 +417,12 @@ form .form-el .tips-msg {
     margin-right: 20px;
 }
 
-.profile .form-el .upload-flex{
+.profile .form-el .upload-flex {
     display: flex;
 }
 
-.profile .form-el .upload-cont , .upload-btn{
+.profile .form-el .upload-cont,
+.upload-btn {
     height: 30px;
     outline: none;
     border: 1px solid #E4E4E4;
@@ -437,12 +439,12 @@ form .form-el .tips-msg {
     height: 12px;
 }
 
-.upload-btn:hover{
+.upload-btn:hover {
     outline: none;
     border: 1px solid #007BFF !important;
 }
 
-.upload-cont:hover{
+.upload-cont:hover {
     outline: none;
     border: 1px solid #007BFF !important;
 }
@@ -463,7 +465,7 @@ form .form-el .tips-msg {
     overflow: hidden;
 }
 
-.profile .form-el .upload-cont + p {
+.profile .form-el .upload-cont+p {
     padding-top: 9px;
 }
 
@@ -475,17 +477,14 @@ form .form-el .tips-msg {
     align-items: center;
 }
 
-.profile .signup-butt{
+.profile .signup-butt {
     width: 150px;
 }
 
 .profile .form-el .reset-btn {
     padding-top: 3px;
-} 
-
-input:invalid { 
-    border: 1px solid red;
 }
 
-
-
+input:invalid {
+    border: 1px solid red;
+}

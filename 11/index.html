@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Signup forms</title>
     <script>
-    
+
         function setFileName() {
             let file = document.getElementById('avatarFile');
             let span = document.getElementById("fileName");
@@ -22,7 +22,7 @@
             span.textContent = fileName.substr(0, 12);
         }
 
-        function resetFileName(){
+        function resetFileName() {
             let file = document.getElementById('avatarFile');
             let span = document.getElementById("fileName");
 
@@ -37,12 +37,12 @@
         <div class="container">
             <div class="flex-cont">
                 <div class="form-cont">
-                    <form class="register" action="" onsubmit="return false;" method="post"  novalidate>
+                    <form class="register" action="" onsubmit="return false;" method="post" novalidate>
                         <h2 class="form-el">Create an Account</h2>
                         <div class="name input-flex-row form-el">
                             <div class="input-cont">
                                 <label for="firstName">First Name</label>
-                                <input id="firstName" type="text" name="firstName"  minlength="2" pattern="^[a-zA-Z]+$">
+                                <input id="firstName" type="text" name="firstName" minlength="2" pattern="^[a-zA-Z]+$">
                             </div>
                             <div class="input-cont">
                                 <label for="lastName">Last Name</label>
@@ -59,13 +59,13 @@
                         <div class="gender input-flex-row form-el">
                             <div class="radio-el">
                                 <label class="radio-cont" for="male">Male
-                                    <input id="male" type="radio" name="gender" value="male" >
+                                    <input id="male" type="radio" name="gender" value="male">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
                             <div class="radio-el">
                                 <label class="radio-cont" for="female">Female
-                                    <input id="female" type="radio" name="gender" value="female" >
+                                    <input id="female" type="radio" name="gender" value="female">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
@@ -73,7 +73,8 @@
                         <div class="region input-flex-row form-el">
                             <div class="input-cont">
                                 <label for="country">Country</label>
-                                <select id="country" class="country" name="country" onchange="this.style.color='#545454'" >
+                                <select id="country" class="country" name="country"
+                                    onchange="this.style.color='#545454'">
                                     <option selected disabled hidden>Select country</option>
                                     <option value="AF">Afghanistan</option>
                                     <option value="AX">Aland Islands</option>
@@ -364,17 +365,18 @@
                                     <label for="avatarFile" class="upload-cont">
                                         <span id="fileName"></span>
                                         <img src="assets/images/camera-ico.svg" alt="">
-                                        <input onchange="setFileName();" id="avatarFile" type="file" name="avatar" size="1" accept="image/*">
+                                        <input onchange="setFileName();" id="avatarFile" type="file" name="avatar"
+                                            size="1" accept="image/*">
                                     </label>
                                     <p class="tips-msg">
                                         Up to 1 MB (300x300 px)
-                                    </p> 
+                                    </p>
                                 </div>
                                 <div>
                                     <button class="upload-btn reset-btn" onclick="resetFileName();">
                                         <img src="assets/images/trash.svg" alt="">
                                     </button>
-                                </div>   
+                                </div>
                             </div>
                         </div>
                         <div class="input-flex-row form-el">
@@ -384,13 +386,14 @@
                             </div>
                             <div class="input-cont">
                                 <label for="profEmail">Email</label>
-                                <input id="profEmail" type="email" name="profEmail" >
+                                <input id="profEmail" type="email" name="profEmail">
                             </div>
                         </div>
                         <div class="region input-flex-row form-el">
                             <div class="input-cont">
                                 <label for="profCountry">Country</label>
-                                <select id="profCountry" class="country" name="profCountry" onchange="this.style.color='#545454'" >
+                                <select id="profCountry" class="country" name="profCountry"
+                                    onchange="this.style.color='#545454'">
                                     <option selected disabled hidden>Select country</option>
                                     <option value="AF">Afghanistan</option>
                                     <option value="AX">Aland Islands</option>
@@ -652,11 +655,12 @@
                         <div class="input-flex-row form-el">
                             <div class="input-cont">
                                 <label for="profZip">Zip Code</label>
-                                <input pattern="[0-9]{6}" id="profZip" type="text" name="profZip" >
+                                <input pattern="[0-9]{6}" id="profZip" type="text" name="profZip">
                             </div>
                             <div class="input-cont">
                                 <label for="profPhone">Phone Number</label>
-                                <input pattern="[0-9]{3}-[0-9]{2,3}-[0-9]{7}" id="profPhone" type="text" name="profPhone" >
+                                <input pattern="[0-9]{3}-[0-9]{2,3}-[0-9]{7}" id="profPhone" type="text"
+                                    name="profPhone">
                             </div>
                         </div>
                         <div class="form-el">
