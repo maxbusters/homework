@@ -1,0 +1,362 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------------------------END RESET CSS--------------------*/
+
+.container {
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 20px 100px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arvo', serif;
+}
+
+header {
+    height: 140px;
+    background-color: burlywood;
+}
+
+.header__logo {
+    height: 110px;
+    margin: 10px 30px;
+    vertical-align: middle;
+}
+
+.header__title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 42px;
+    font-weight: 600px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.main {
+    flex: auto;
+    background: #006400;
+
+}
+
+.row--flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+.card-cont {
+    width: 170px;
+    height: 230px;
+    margin: 3px 3px;
+    display: inline-flex;
+}
+
+.card-cont:hover .card {
+    animation: none;
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    transform-origin: right center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .card--random-anim{
+    animation: random-anim .3 ease .2 infinite alternate alternate;  
+} */
+
+.card--random-anim {
+    animation-name: slidein;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+}
+
+.card--random-anim-delay {
+    animation-delay: 2s;
+}
+
+
+@keyframes slidein {
+    from, to {
+        transform: translateX(0%) rotateY(0deg);
+    }
+  
+    25%, 75% {
+        transform: translateX(-50%) rotateY(-90deg);
+    }
+
+    50% {
+        transform: translateX(-100%) rotateY(-180deg);
+    }
+
+  }
+
+
+.card__back,
+.card__front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: whitesmoke;
+    color: #444;
+    font: bolder 22px/200px Courier;
+    border: 3px solid #444;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+
+.card__back {
+    background: #ddd;
+    background-image: url("../images/card-shirt.jpg");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card__front {
+    transform: rotateY(180deg);
+}
+
+.c-front__title {
+    padding: 2px;
+}
+
+.c-front__title--top-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30px;
+    padding-left: 5px;
+}
+
+.c-front__title--bottom-right{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    padding-right: 5px;
+}
+
+
+.c-front__title--rotate {
+    transform: rotate(180deg);
+}
+
+.c-title__name {
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.c-front__image--center {
+    margin: auto 0;
+}
+ .c-title__name {
+    color: black;
+}
+
+.c-spaders .c-title__name, .c-clubs .c-title__name{
+    color: black;
+}
+
+.c-heart .c-title__name, .c-diamond .c-title__name{
+    color: #a31818;
+}
+
+.c-clubs .img {
+    content: url("../images/clubs.png");
+}
+
+.c-diamond .img {
+    content: url("../images/diamond.png");
+}
+
+.c-spaders .img {
+    content: url("../images/spaders.png");
+}
+
+
+.c-heart .img {
+    content: url("../images/heart.png");
+}
+
+.img--large{
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.img--small {
+    width: 20px;
+    height: 20px;
+}
+
+footer {
+    background-color: burlywood;
+    height: 260px;
+}
+
