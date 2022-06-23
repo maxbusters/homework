@@ -1,0 +1,367 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------------------------END RESET CSS--------------------*/
+:root {
+    --brdr-btm: #EFEEF3;
+    --brdr-srvc: #E5EAF4;
+    --wh: #FFFFFF;
+    --text: #16133D;
+    --middle-gray: #7690A8;
+    --link-green: #3DB370;
+
+    --lighten-blue: #E8F3FF;
+    --light-blue: #D1E7FF; 
+    --middle-blue: #B9DCFF;
+    --dark-blue: #007FFC;
+
+    --lighten-green: #F4FEFF;
+    --light-green: #E1F4F5;
+    --middle-green:#CAEFF2;
+    --dark-green: #52C29D;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid var(--brdr-btm);
+}
+
+.header__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.header__logo {
+    padding: 22px 0;
+}
+
+.main {
+    flex: auto;
+    background: var(--wh);
+    margin: 100px 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.main__title-cont>.title__desc {
+    line-height: 21px;
+    color: var(--middle-gray);
+}
+
+.main__title-cont>.title__h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+
+    letter-spacing: 0.2px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.services--flex-row-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services__el {
+    padding: 40px;
+    width: 370px;
+    height: 340px;
+    border: 1px solid var(--brdr-srvc);
+    border-radius: 8px;
+}
+
+.services__el>.service__img-cont {
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(61, 179, 112, 0.1);
+    border-radius: 16px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__el svg > .service__svg-clr-1 {
+    fill: var(--light-blue);
+}
+
+.services__el  svg > .service__svg-clr-2 {
+    fill: var(--lighten-blue);
+}
+
+.services__el svg > .service__svg-clr-3 {
+    fill: var(--middle-blue);
+}
+
+.services__el svg > .service__svg-clr-4 {
+    fill: var(--dark-blue);
+}
+
+.services__el:hover {
+    border: 1px solid var(--link-green);
+}
+
+.services__el:hover svg > .service__svg-clr-1 {
+    fill: var(--light-green);
+}
+.services__el:hover svg > .service__svg-clr-2 {
+    fill: var(--lighten-green);
+}
+.services__el:hover svg > .service__svg-clr-3 {
+    fill: var(--middle-green);
+}
+.services__el:hover svg > .service__svg-clr-4 {
+    fill: var(--dark-green);
+}
+
+
+
+.services__el>.service__title {
+    font-size: 24px;
+    line-height: 21px;
+
+    letter-spacing: 0.2px;
+}
+
+.services__el>.service_desc {
+    padding: 15px 0;
+    line-height: 28px;
+}
+
+.services__el>.service__link {
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 19px;
+    color: var(--link-green);
+}
+
+.services__el>.service__link:hover {
+    color: #007FFC;
+}
+
+.footer {
+    background: var(--text);
+}
+
+.footer__logo-cont {
+    padding: 40px 0;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.footer__socials {
+    width: 230px;
+    padding-bottom: 40px;
+}
+
+.socials--flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__socials>.socials__el {
+    width: 38px;
+    height: 38px;
+    
+    cursor: pointer;
+    
+    background: var(--brdr-btm);
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__socials > .socials__el > svg {
+    width: 20.01px;
+    height: 20.01px;
+}
+
+.social__ico--hidden {
+    display: none;
+}
+
+.social__ico--visible {
+    display: block;
+}
+
+.socials__el:hover > .social__ico--visible {
+    display: none;
+}
+
+.socials__el:hover > .social__ico--hidden {
+    display: block;
+}

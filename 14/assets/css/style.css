@@ -147,7 +147,7 @@ table {
 .container {
     margin: 0 auto;
     max-width: 90%;
-    padding: 20px 100px;
+    padding: px 100px;
 }
 
 html,
@@ -162,6 +162,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Arvo', serif;
+    
 }
 
 header {
@@ -200,14 +201,14 @@ header {
 
 
 .card-cont {
-    width: 170px;
+    min-width: 170px;
     height: 230px;
     margin: 3px 3px;
     display: inline-flex;
 }
 
 .card-cont:hover .card {
-    animation: none;
+    animation: alternate;
     transform: translateX(-100%) rotateY(-180deg);
 }
 
@@ -346,8 +347,8 @@ header {
 }
 
 .img--large{
-    width: 100px !important;
-    height: 100px !important;
+    width: 100px ;
+    height: 100px ;
 }
 
 .img--small {
@@ -358,5 +359,12 @@ header {
 footer {
     background-color: burlywood;
     height: 260px;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
 
