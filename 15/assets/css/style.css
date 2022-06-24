@@ -355,20 +355,27 @@ body {
 .footer__socials > .socials__el > svg {
     width: 20.01px;
     height: 20.01px;
+    z-index: 1;
+    position: absolute;
 }
 
 .social__ico--hidden {
-    display: none;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
 }
 
 .social__ico--visible {
-    display: block;
+    z-index: -1;
+    transition: all 0.5s;
 }
 
 .socials__el:hover > .social__ico--visible {
-    display: none;
+    opacity: 0;
+    z-index: -1;
 }
 
 .socials__el:hover > .social__ico--hidden {
-    display: block;
+    opacity: 1;
+    z-index: 1;
 }
