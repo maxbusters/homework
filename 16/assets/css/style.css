@@ -746,10 +746,10 @@ a {
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 390px) {
     .container {
-        width: 94.5%;
-        max-width: 320px;
+        width: 95%;
+        max-width: 390px;
     }
 
     .main__section--first {
@@ -860,5 +860,12 @@ a {
     .footer__copyright {
         font-size: 16px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 94.5%;
+        max-width: 320px;
     }
 }
