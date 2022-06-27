@@ -625,7 +625,7 @@ a {
     }
 
     .article__container {
-        width: 57.7%;
+        width: 55%;
         padding-top: 0px;
         padding-left: 20px;
     }
@@ -641,7 +641,7 @@ a {
    
     .latest .article__content {
         padding-left: 20px;
-        width: 57.7%;
+        width: 55%;
     }
 
     .tablet-cont--flex-row-rev .article__content {
