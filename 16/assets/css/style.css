@@ -361,6 +361,11 @@ a {
     padding-bottom: 15px;
 }
 
+.artilce__view-all {
+    display: flex;
+    align-items: center;
+}
+
 .artilce__view-all:hover {
     color: var(--black);
 }
@@ -373,9 +378,23 @@ a {
 }
 
 .article__prew-arr {
-    line-height: 10px;
+    display: inline-flex;
+    align-items: center;
     font-size: 24px;
     padding-left: 10px;
+    line-height: 0px;
+}
+
+.article__arr--hover:hover::before{
+    content: 'Read More';
+    font-size: 16px;
+    
+    padding-right: 10px;
+    color: #000000;
+}
+
+.article__arr--hover:hover {
+    color: #000000;
 }
 
 .sect__header {
