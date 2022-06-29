@@ -613,6 +613,13 @@ path {
 
 }
 
+@media screen and (max-width: 1085px) {
+    .article__container {
+        padding-top: 0px;
+    }
+
+}
+
 @media screen and (max-width: 1024px) {
 
 
@@ -625,6 +632,7 @@ path {
         padding-top: 30px;
     }
 
+   
 
     .tablet-cont--flex-col {
         flex-direction: column;
