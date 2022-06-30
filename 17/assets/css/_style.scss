@@ -1,7 +1,10 @@
 .header {
     &__container {   
-        @include container;
+        @extend .container;
         margin-top: 121px;
+        @include maxWidth(768px){
+            margin-top: 50px;
+        }
     }
     
     &__subtitle {
@@ -9,6 +12,13 @@
         @include raleway(500);
         @include font-sizes(18px, 24px);
         color: $middle-grey;
+        @include maxWidth(768px){
+            @include font-sizes(16px, 24px);
+        }
+
+        @include maxWidth(580px){
+            @include font-sizes(14px, 22px);
+        }
     }
 
     &__title {
@@ -16,33 +26,246 @@
         @include roboto(900);
         @include font-sizes(60px, 110%);
         color: $gold;
+        margin-top: 15px;
+        margin-bottom: 50px;
+        @include maxWidth(768px){
+            @include font-sizes(50px, 110%);
+        }
+
+        @include maxWidth(580px){
+            @include font-sizes(40px, 110%);
+        }
     }
 
     &__subtitle, &__title {
         text-transform: uppercase;
     }
+
+    &__divider {
+        position: relative;
+    }
+
+    .divider {
+        &__line {
+            position: absolute;
+            z-index: -1;
+            border: none;
+            border-bottom: 1px solid $gold;
+            width: 35%;
+            left: 50%;
+            transform:translate(-50%, 0%);
+        }
+
+        &__img {
+            padding: 0px 5px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform:translate(-50%, -50%);
+            background-color: white;
+        }
+    }
+
+    
 }
 
 .main { 
     &__wrapper {
+        margin-top: 50px;
         @include flex-row;
+        @include maxWidth(1024px) {
+            @include flex-col;
+        }
     }
 
     &__container {
-        @include container;
+        @extend .container;
         margin-bottom: 122px;
+        padding-bottom: 65px;
+        @include maxWidth(768px){
+            margin-bottom: 50px;
+        }
+    }
+
+    &__divider {
+            border-left: 1px solid $gold;
+            height: auto;
+            width: 1px;
+            @include maxWidth(1024px) {
+                border: none;
+                border-bottom: 1px solid $gold;
+                height: 1px;
+                width: 100%;
+                padding-top: 65px;
+            }
     }
 
     .left   {
-        &__wrapper {
-            width: 55%;
+        width: 49%;
+        
+        padding-top: 65px;
+
+        margin-left: 70px;
+        padding-right: 85px;
+
+        &__svg-image {
+            min-width: 50%;
         }
+        @include maxWidth(1024px) {
+            width: 80%;
+            margin: 0;
+            padding: 0;
+            margin: 0 20px;
+        }
+
+        @include maxWidth(768px) { 
+            width: 90%;
+        }
+        
     }
 
     .right {
+        width: 49%;
+        padding-top: 65px;
+
+        margin-right: 70px;
+        padding-left: 85px;
+        
+        text-align: center;
+        color: $dark-grey;
+
         &__wrapper {
-            width: 50%;
+            @include flex-col;
+        }
+
+        &__head {
+            margin-bottom: 30px;
+        }
+
+        &__name {
+            @include roboto(900);
+            @include font-sizes(36px, 42px);
+            @include maxWidth(768px) { 
+                @include font-sizes(30px, 40px);
+            }
+            @include maxWidth(580px) { 
+                @include font-sizes(27px, 40px);
+            }
+            
+        }
+
+        &__divider {
+            border: none;
+            border-bottom: 1px solid $gold;
+            width: 100px;
+            margin: 30px auto;
+        }
+
+        &__position {
+            @include raleway(400);
+            @include font-sizes(24px, 36px);
+            @include maxWidth(580px) { 
+                @include font-sizes(18px, 36px);
+            }
+        }
+
+        &__socials {
+            margin-bottom: 49px;
+        }
+
+        &__description {
+            @include raleway(500);
+            @include font-sizes(14px, 24px);
+            color: $light-black;
+        }
+
+        &__nav {
+            @include flex-row;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        &__view-btn {
+            @include opensans(700);
+            @include font-sizes(14px, 14px);
+            color: $dark-grey;
+
+            padding: 5px 10px;
+
+            border: 1px solid $gold;
+
+            @include transition(.7s);
+
+            &:hover {
+                color: $gold;
+            }
+        }
+
+        @include maxWidth(1024px) {
+            width: 100%;
+        }
+
+        @include maxWidth(580px) { 
+            padding-left: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .socials {
+        &__wrapper {
+            @include flex-row;
+        }
+        &__el {
+            @include square-size(30px);
+            @include transition(0.7s);
+
+            cursor: pointer;
+            border: 2px solid $light-grey;
+            border-radius: 50%;
+            margin: 0 auto;
+            vertical-align: middle;
+            padding: 5.5px 0;
+        }
+
+        &__ico {
+            @include transition(0.7s);
+            fill: $light-grey;
+        }
+
+        &__el:hover {
+            border-color: $gold; 
+            .socials__ico {
+                fill: $gold;
+            }
+        }
+    }
+
+    .nav {
+        &__el {
+            cursor: pointer;
+            height: 4px;
+            background-color: $gold;
+            @include transition;
+            &:hover {
+                background-color: $light-grey;
+            }
+        }
+
+        &__small {
+            width: 10px;
+        }
+
+        &__middle {
+            margin: 0 5px;
+            width: 20px;
         }
         
+    }
+}
+
+.socials{
+    &__el + &__el {
+        margin-left: 5px;
     }
 }

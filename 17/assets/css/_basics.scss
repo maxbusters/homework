@@ -10,10 +10,18 @@ body {
     flex-direction: column;
 }
 
-header {
-    
-}
-
 main {
     flex: auto;
+}
+
+button {
+    border: none;
+    background-color: $white;
+    color: $black;
+    cursor: pointer;
+}
+
+.container {
+    width: 81.25%;
+    margin: 0 auto ;
 }
