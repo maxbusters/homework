@@ -1,0 +1,48 @@
+.header {
+    &__container {   
+        @include container;
+        margin-top: 121px;
+    }
+    
+    &__subtitle {
+        @include flex-center;
+        @include raleway(500);
+        @include font-sizes(18px, 24px);
+        color: $middle-grey;
+    }
+
+    &__title {
+        @include flex-center;
+        @include roboto(900);
+        @include font-sizes(60px, 110%);
+        color: $gold;
+    }
+
+    &__subtitle, &__title {
+        text-transform: uppercase;
+    }
+}
+
+.main { 
+    &__wrapper {
+        @include flex-row;
+    }
+
+    &__container {
+        @include container;
+        margin-bottom: 122px;
+    }
+
+    .left   {
+        &__wrapper {
+            width: 55%;
+        }
+    }
+
+    .right {
+        &__wrapper {
+            width: 50%;
+        }
+        
+    }
+}
