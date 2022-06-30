@@ -379,16 +379,17 @@ a {
 }
 
 .article__arr::before {
-    display: none;
-    content: 'Read more';
+    transform: translateX(-100%, -100%);
+    content: '';
     padding-right: 5px;
     color: var(--white);
     font-size: 16px;
-    transition: color 0.35s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .article__arr:hover::before {
-    display: inline-block;
+    content: 'Read more';
+    transform: translateX(0);
     color: var(--black);
 }
 
@@ -496,6 +497,7 @@ a {
     cursor: pointer;
 
     background: var(--grey-700);
+    transition: all .4s ease;
 }
 
 .popular__load-more-btn:hover {
