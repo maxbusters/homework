@@ -1,0 +1,223 @@
+.header {
+    &__container {
+        @extend .container;
+    }
+
+    &__main-title {
+        @include font-sizes(16px, 150%);
+        letter-spacing: 0.5em;
+        margin: 38px 0;
+
+        @include maxWidth(768px) {
+            margin: 18px 0;
+        }
+    }
+
+    @include maxWidth(768px) {
+        margin-bottom: 50px;
+    }
+
+    @include maxWidth(580px) {
+        margin-bottom: 0;
+    }
+}
+
+.main {
+    .intro {
+        margin-bottom: 70px;
+        @include maxWidth(580px) {
+            margin-bottom: 50px;
+        }
+
+        &__container {
+            @extend .container;
+        }
+
+        &__title {
+            letter-spacing: 0.05em;
+
+            @include maxWidth(768px) {
+                @include font-sizes(33px, 50px);
+                margin-bottom: 50px;
+            }
+
+            @include maxWidth(580px) {
+                @include font-sizes(30px, 50px);
+                margin-bottom: 40px;
+            }
+        }
+
+        &__img-cont {
+            margin-top: 70px;
+
+            @include maxWidth(580px) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .overview {
+        @extend .section;
+        &__container {
+            @extend .container;
+        }
+
+        &__title {
+            @extend .title;
+        }
+
+        &__text {
+            width: 50%;
+            @include maxWidth(900px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .research {
+        @extend .section;
+
+        &__container {
+            @extend .container;
+        }
+
+        &__title {
+            @extend .title;
+        }
+    }
+    
+    .sketches {
+        @extend .section;
+
+        &__container {
+            @extend .container;
+        }
+    }   
+
+    .final {
+        @extend .section;
+
+        &__container {
+            @extend .container;
+        }
+
+        &__title {
+            @extend .title;
+        }
+    }
+}
+
+.footer {
+    &__container {
+        @extend .container;
+    }
+
+    &__wrapper {
+        @include flex-row;
+
+        @include maxWidth(900px) {
+            @include flex-col;
+            @include flex-center;
+        }
+    }
+
+    &__contacts {
+        margin: 70px 0;
+
+        @include maxWidth(900px) {
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__socials {
+        margin-top: 0px;
+    }
+
+    &__copyright {
+        @include flex-center;
+        font-size: 12px;
+    
+        margin-bottom: 30px;
+
+        @include maxWidth(900px) {
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        @include maxWidth(580px) {
+            @include font-sizes(16px, 166%);
+            text-align: center;
+        }
+    }
+}
+
+.contacts {
+    @include flex-col;
+    @include maxWidth(900px) {
+        text-align: center;
+        padding-bottom: 1.34px
+    }
+
+    &__title {
+        @include redHatDisplay(400);
+        @include font-sizes(48px, 64px);
+
+        letter-spacing: 0.05em;
+        padding-bottom: 30px;
+
+        @include maxWidth(580px) {
+            @include font-sizes(32px, 42px);
+            padding-bottom: 20px;
+        }
+
+    }
+
+    &__phone,
+    &__email {
+        display: inline-block;
+
+        @include maxWidth(580px) {
+            @include font-sizes(18px, 166%);
+        }
+        
+    }
+
+    &__phone {
+        margin-bottom: 15px;
+    }
+}
+
+.socials {
+    &__wrapper {
+        @include flex-row;
+    }
+
+    &__el {
+        @include flex-center;
+        @include transition(.4s);
+        
+        width: 50px;
+        height: 50px;
+        color: $grey-700;
+        border: 1px solid $grey-700;
+        cursor: pointer;
+        
+    }
+
+    &__fill {
+        fill: $grey-700;
+    }
+
+    &__el:hover {
+        background-color: $grey-700;
+    }
+
+    &__el:hover &__fill {
+        fill: $white;
+    }
+
+    &__el + &__el {
+        margin-left: 23px;
+    }
+}

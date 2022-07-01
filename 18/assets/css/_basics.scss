@@ -1,0 +1,119 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    @include lato(400);
+    color: black;
+}
+
+main {
+    flex: auto;
+}
+
+footer {
+    background-color: $grey-100;
+}
+
+button {
+    border: none;
+    background-color: $white;
+    color: $black;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2 {
+    @include redHatDisplay(600);
+}
+
+h1 {
+    @include font-sizes(48px, 64px);
+}
+
+h2 {
+    @include font-sizes(28px, 166%);
+}
+
+p {
+    @include font-sizes(19px, 32px);
+}
+
+path {
+    @include transition(.4s);
+}
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.img-cont {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    @include flex-center;
+}
+
+.container {
+    width: 81.25%;
+    margin: 0 auto ;
+
+    @include maxWidth(1920px) { 
+        width: 80%;
+    }
+    @include maxWidth(768px) { 
+        width: 90%;
+    }
+    @include maxWidth(580px) { 
+        width: 95%;
+    }
+}
+
+.section {
+    margin-bottom: 90px; 
+
+    @include maxWidth(900px) {
+        margin-bottom: 70px;
+    }
+}
+
+.title {
+    margin-bottom: 50px;
+    letter-spacing: 0.1em;
+
+    @include font-sizes(28px, 166%);
+    
+    @include maxWidth(580px) { 
+        margin-bottom: 40px;
+        @include font-sizes(26px, 166%);
+    }
+}
+
+.text__p {
+    @include font-sizes(19px, 32px);
+
+    @include maxWidth(580px) { 
+        @include font-sizes(16px, 32px);
+    }
+}
+
+.text__p + .text__p {
+    margin-top: 30px;
+
+    @include maxWidth(580px) { 
+        margin-top: 20px;
+    }
+}
+
+
+
+
