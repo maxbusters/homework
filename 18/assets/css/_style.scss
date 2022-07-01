@@ -114,6 +114,7 @@
 
     &__wrapper {
         @include flex-row;
+        align-items: center;
 
         @include maxWidth(900px) {
             @include flex-col;
