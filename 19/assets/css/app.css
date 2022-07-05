@@ -342,6 +342,9 @@ button {
   left: 0;
   padding-left: 5px;
 }
+.wrapper .aside__hide:checked + .aside .aside__button-cont svg {
+  transform: rotate(180deg);
+}
 .wrapper .aside__hide:checked + .aside .logo {
   margin: 0;
 }

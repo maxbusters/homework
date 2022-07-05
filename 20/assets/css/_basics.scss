@@ -14,11 +14,13 @@ main {
     flex: auto;
 }
 
-button {
-    border: none;
-    background-color: $white;
-    color: $black;
-    cursor: pointer;
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
 }
 
 .container {
