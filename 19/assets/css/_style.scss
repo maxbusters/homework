@@ -33,7 +33,9 @@
         }
 
         &__button {
-            cursor: pointer;
+            svg {
+                cursor: pointer;
+            }  
         }
 
         .logo {
@@ -234,6 +236,7 @@
                     padding-left: 10px;
                 }
                 &__name {
+                    @include font-sizes(18px, 22px);
                     @include maxWidth(635px) {
                         display: none;
                     }
@@ -265,7 +268,6 @@
         }
 
         .footer {
-            background-color: white;
             height: 179px;
         }
 
@@ -278,6 +280,7 @@
         .aside__button-cont {
             position: relative;
             left: 0;
+            padding-left: 5px;
         }
 
         .logo {

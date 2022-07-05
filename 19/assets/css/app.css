@@ -131,7 +131,7 @@ button {
 .wrapper .aside__button-path {
   fill: #392C72;
 }
-.wrapper .aside__button {
+.wrapper .aside__button svg {
   cursor: pointer;
 }
 .wrapper .aside .logo {
@@ -311,6 +311,10 @@ button {
     padding-left: 10px;
   }
 }
+.wrapper .right .header .lang__name {
+  font-size: 18px;
+  line-height: 22px;
+}
 @media screen and (max-width: 635px) {
   .wrapper .right .header .lang__name {
     display: none;
@@ -328,7 +332,6 @@ button {
   fill: #9E8CFC;
 }
 .wrapper .right .footer {
-  background-color: white;
   height: 179px;
 }
 .wrapper .aside__hide:checked + .aside {
@@ -337,6 +340,7 @@ button {
 .wrapper .aside__hide:checked + .aside .aside__button-cont {
   position: relative;
   left: 0;
+  padding-left: 5px;
 }
 .wrapper .aside__hide:checked + .aside .logo {
   margin: 0;
