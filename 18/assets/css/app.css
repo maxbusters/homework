@@ -200,6 +200,7 @@ img {
   line-height: 150%;
   letter-spacing: 0.5em;
   margin: 38px 0;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
   .header__main-title {
@@ -252,6 +253,7 @@ img {
 }
 .main .overview__text {
   width: 50%;
+  color: #565656;
 }
 @media screen and (max-width: 900px) {
   .main .overview__text {

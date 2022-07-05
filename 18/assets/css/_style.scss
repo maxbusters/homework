@@ -4,9 +4,11 @@
     }
 
     &__main-title {
+        
         @include font-sizes(16px, 150%);
         letter-spacing: 0.5em;
         margin: 38px 0;
+        text-transform: uppercase;
 
         @include maxWidth(768px) {
             margin: 18px 0;
@@ -68,6 +70,7 @@
 
         &__text {
             width: 50%;
+            color: $grey-700;
             @include maxWidth(900px) {
                 width: 100%;
             }
