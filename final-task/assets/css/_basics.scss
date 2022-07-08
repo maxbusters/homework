@@ -1,0 +1,119 @@
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: auto;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+li {
+    list-style: none;
+}
+
+input, button, a {
+    outline: none;
+}
+
+button:focus,
+a:focus {
+    box-shadow: 0 -2px 3px -5px orange, 0 8px 3px -5px orange;
+}
+
+.button {
+    cursor: pointer;
+    @include aleo(400);
+    @include upper;
+    letter-spacing: 0.1em;
+
+    border: none;
+    background-color: $accent;
+    color: $white;
+
+    &__flare {
+        z-index: 0;
+        background-color: $accentDarker;
+        position: absolute;
+        top: 0;
+        right: 115px;
+        height: 100%;
+        width: 100%;
+        transform: skewX(45deg);
+        @include transition;
+    }
+
+    &__text {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.button-flare {
+    position: relative;
+    overflow-x: hidden;
+
+    
+}
+
+.button:hover {
+    .button__flare {
+        animation: flareAnimation;
+        animation: flareAnimation .2s 1 ease-in;
+
+        @keyframes flareAnimation {
+            0% {
+                right: 115px;
+                width: 100%;
+            }
+
+            100% {
+                width: 50%;
+                right: 50px;
+            }
+        }
+
+        width: 50%;
+        right: 50px;
+    }
+}
+
+.container {
+    width: 70%;
+    @include maxWidth(1360px){
+        width: 84%;
+    }
+    @include maxWidth(1024px){
+        width: 96%;
+    }
+    @include maxWidth(768px) {
+        width: 93%;
+    }
+    margin: 0 auto;
+    @include font-sizes(14px, 20px);
+    color: $white;
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    @include josephinSans(700);
+    @include upper;
+}
