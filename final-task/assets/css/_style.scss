@@ -1,3 +1,10 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .header {
     @extend .background;
     color: $white;
@@ -41,6 +48,8 @@
 
         &__container {
             @include flex-row;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
         }
 
@@ -54,6 +63,22 @@
             width: 100%;
         }
 
+        &__input::-webkit-input-placeholder {
+            color: $textGrey;
+        }
+
+        &__input::-moz-placeholder {
+            color: $textGrey;
+        }
+
+        &__input:-ms-input-placeholder {
+            color: $textGrey;
+        }
+
+        &__input::-ms-input-placeholder {
+            color: $textGrey;
+        }
+
         &__input::placeholder {
             color: $textGrey;
         }
@@ -62,7 +87,11 @@
             @include transition(.4s);
             @extend .button;
             @include flex-row;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
 
             cursor: pointer;
@@ -105,7 +134,11 @@
 
         &__wrapper {
             @include flex-row;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             padding: 32px 0;
 
@@ -164,7 +197,7 @@
         &__marker:checked+.nav__wrapper {
             @include maxWidth(650px) {
                 .burger {
-                   
+
                     &__close {
                         @include transition(.4s);
                         width: auto;
@@ -185,6 +218,7 @@
                     width: auto;
                     opacity: 1;
                     margin: 32px 0;
+
                     &__el {
                         display: block;
                     }
@@ -211,6 +245,8 @@
 
         &__list {
             @include flex-row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
 
             @include maxWidth(650px) {
@@ -226,8 +262,8 @@
                     display: none;
                 }
             }
-            
-            
+
+
         }
 
 
@@ -239,7 +275,7 @@
                 @include upper;
                 text-align: center;
                 letter-spacing: 0.1em;
-                
+
                 color: $white;
 
                 @include maxWidth(650px) {
@@ -247,7 +283,7 @@
                 }
             }
 
-            &__el + .list__el {
+            &__el+.list__el {
                 margin-left: 40px;
             }
 
@@ -255,7 +291,7 @@
                 @include font-sizes(16px, 20px);
             }
 
-            &__el + .list__el {
+            &__el+.list__el {
                 @include maxWidth(650px) {
                     margin-left: 0;
                     margin-top: 24px;
@@ -274,7 +310,11 @@
 
         &__wrapper {
             @include flex-row;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             padding: 124px 0;
 
@@ -328,6 +368,8 @@
         .right {
             &__wrapper {
                 @include flex-col;
+                -webkit-box-align: unset;
+                -ms-flex-align: unset;
                 align-items: unset;
 
                 @include maxWidth(850px) {
@@ -383,6 +425,7 @@
     .steps {
         background-color: $darkGrey;
         padding-top: 40px;
+
         @include maxWidth(800px) {
             padding-top: 60px;
         }
@@ -396,7 +439,7 @@
             position: relative;
 
             z-index: 1;
-            
+
             left: 18%;
             width: 80%;
 
@@ -406,11 +449,12 @@
         }
 
         &__line {
-           
+
             position: absolute;
             top: 75px;
             z-index: 1;
             width: 80%;
+
             @include maxWidth(800px) {
                 display: none;
             }
@@ -418,6 +462,8 @@
 
         &__wrapper {
             @include flex-row;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
 
             @include maxWidth(800px) {
@@ -449,6 +495,7 @@
             margin: 0 auto;
             margin-bottom: 4px;
             margin-top: 107px;
+
             @include maxWidth(800px) {
                 margin: 0 auto;
                 margin-bottom: 4px;
@@ -460,6 +507,7 @@
             @include font-sizes(36px, 40px);
             text-align: center;
             margin-bottom: 44px;
+
             @include maxWidth(800px) {
                 margin-bottom: 59px;
             }
@@ -476,7 +524,11 @@
 
         &__wrapper {
             @include flex-row;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
             justify-content: flex-start;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
         }
 
@@ -498,7 +550,11 @@
 
         &__wrapper {
             @include flex-row;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
             justify-content: flex-end;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
         }
     }
@@ -576,7 +632,8 @@
 
     .post {
         @include flex-row;
-        @include maxWidth(850px){
+
+        @include maxWidth(850px) {
             @include flex-col;
         }
 
@@ -604,7 +661,7 @@
                 display: block;
                 min-height: 100%;
                 max-block-size: 100%;
-                
+
                 @include maxWidth(850px) {
                     width: 100%;
                 }
@@ -646,6 +703,8 @@
 
     .socials {
         @include flex-row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
 
         &__ico {

@@ -1,3 +1,10 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 html,
 body {
     scroll-behavior: smooth;
@@ -8,11 +15,18 @@ body {
 }
 
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 main {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
     flex: auto;
 }
 
@@ -25,12 +39,15 @@ li {
     list-style: none;
 }
 
-input, button, a {
+input,
+button,
+a {
     outline: none;
 }
 
 button:focus,
 a:focus {
+    -webkit-box-shadow: 0 -2px 3px -5px orange, 0 8px 3px -5px orange;
     box-shadow: 0 -2px 3px -5px orange, 0 8px 3px -5px orange;
 }
 
@@ -52,6 +69,8 @@ a:focus {
         right: 115px;
         height: 100%;
         width: 100%;
+        -webkit-transform: skewX(45deg);
+        -ms-transform: skewX(45deg);
         transform: skewX(45deg);
         @include transition;
     }
@@ -66,13 +85,25 @@ a:focus {
     position: relative;
     overflow-x: hidden;
 
-    
+
 }
 
 .button:hover {
     .button__flare {
-        animation: flareAnimation;
+        -webkit-animation: flareAnimation .2s 1 ease-in;
         animation: flareAnimation .2s 1 ease-in;
+
+        @-webkit-keyframes flareAnimation {
+            0% {
+                right: 115px;
+                width: 100%;
+            }
+
+            100% {
+                width: 50%;
+                right: 50px;
+            }
+        }
 
         @keyframes flareAnimation {
             0% {
@@ -93,15 +124,19 @@ a:focus {
 
 .container {
     width: 70%;
-    @include maxWidth(1360px){
+
+    @include maxWidth(1360px) {
         width: 84%;
     }
-    @include maxWidth(1024px){
+
+    @include maxWidth(1024px) {
         width: 96%;
     }
+
     @include maxWidth(768px) {
         width: 93%;
     }
+
     margin: 0 auto;
     @include font-sizes(14px, 20px);
     color: $white;

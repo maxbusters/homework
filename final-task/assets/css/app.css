@@ -87,7 +87,9 @@ li {
   list-style: none;
 }
 
-input, button, a {
+input,
+button,
+a {
   outline: none;
 }
 
@@ -128,10 +130,8 @@ a:focus {
 }
 
 .button:hover .button__flare, .main .article__button:hover .button__flare, .main .why__button:hover .button__flare, .header .form__submit:hover .button__flare {
-  -webkit-animation: flareAnimation;
-          animation: flareAnimation;
   -webkit-animation: flareAnimation 0.2s 1 ease-in;
-          animation: flareAnimation 0.2s 1 ease-in;
+  animation: flareAnimation 0.2s 1 ease-in;
   width: 50%;
   right: 50px;
 }
