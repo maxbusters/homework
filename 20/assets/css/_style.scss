@@ -23,6 +23,7 @@
         }
 
         &__el {
+            @include transition(.4s);
             @extend .element;
 
             &:nth-child(2) {
@@ -128,6 +129,7 @@
         }
 
         &__el {
+            @include transition(.4s);
             @extend .element;
 
             &:nth-child(2) {
@@ -193,11 +195,11 @@
     .el {
         position: relative;
         border-radius: 20px;
-        @include transition;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         img {
+            
             position: absolute;
             z-index: -2;
             border-radius: 20px;
@@ -207,12 +209,12 @@
                 height: 100%;
                 object-fit: cover;
                 object-position: 50% 0;
-              
             }
             
         }
 
         &__actions {   
+            @include transition;
             @include flex-row;
             justify-content: space-between;
             padding: 0 20px;
@@ -244,6 +246,7 @@
 
     .actions {
         div {
+            @include transition(.4s);
             width: 40px;
             height: 40px;
             background: rgba(224, 224, 224, 0.5);
@@ -268,9 +271,34 @@
     }
 
     .el:hover {
+        animation: gradient .2s linear;
         background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
         .el__actions{
             opacity:  1;
     }
+
+    @keyframes gradient {
+        0% {
+            background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+        }
+        25% {
+            background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.2) 6.99%, rgba(187, 186, 192, 0.25) 12.29%);
+        }
+
+        50% {
+            background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.2) 6.99%, rgba(187, 186, 192, 0.15) 12.29%);
+        }
+
+        75% {
+            background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.2) 6.99%, rgba(187, 186, 192, 0.1) 12.29%);
+        }
+        100% {
+            
+            background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+        }
+        
+    }
+
+    
     }
 }

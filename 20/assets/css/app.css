@@ -119,6 +119,7 @@ li {
 
 .element, .main .portrait__el, .main .natural__el, .main .arch__el {
   background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+  opacity: 1;
 }
 
 .grid, .main .portrait__wrapper, .main .natural__wrapper, .main .arch__wrapper {
@@ -147,6 +148,9 @@ li {
 
 .main .arch__title {
   margin-top: 120px;
+}
+.main .arch__el {
+  transition: all 0.4s ease;
 }
 .main .arch__el:nth-child(2) {
   grid-column: 2/4;
@@ -230,6 +234,9 @@ li {
   .main .natural__el:nth-child(5) {
     grid-column: 1;
   }
+}
+.main .portrait__el {
+  transition: all 0.4s ease;
 }
 .main .portrait__el:nth-child(2) {
   grid-column: 2;
@@ -340,7 +347,6 @@ li {
 .main .el {
   position: relative;
   border-radius: 20px;
-  transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -361,6 +367,7 @@ li {
   }
 }
 .main .el__actions {
+  transition: all 0.4s ease;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -392,6 +399,7 @@ li {
   color: #E0E0E0;
 }
 .main .actions div {
+  transition: all 0.4s ease;
   width: 40px;
   height: 40px;
   background: rgba(224, 224, 224, 0.5);
@@ -411,8 +419,44 @@ li {
   padding: 10px;
 }
 .main .el:hover {
+  -webkit-animation: gradient 0.2s linear;
+          animation: gradient 0.2s linear;
   background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
 }
 .main .el:hover .el__actions {
   opacity: 1;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+  }
+  25% {
+    background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.2) 6.99%, rgba(187, 186, 192, 0.25) 12.29%);
+  }
+  50% {
+    background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.2) 6.99%, rgba(187, 186, 192, 0.15) 12.29%);
+  }
+  75% {
+    background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.2) 6.99%, rgba(187, 186, 192, 0.1) 12.29%);
+  }
+  100% {
+    background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+  }
+}
+@keyframes gradient {
+  0% {
+    background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+  }
+  25% {
+    background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.2) 6.99%, rgba(187, 186, 192, 0.25) 12.29%);
+  }
+  50% {
+    background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.2) 6.99%, rgba(187, 186, 192, 0.15) 12.29%);
+  }
+  75% {
+    background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.2) 6.99%, rgba(187, 186, 192, 0.1) 12.29%);
+  }
+  100% {
+    background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+  }
 }/*# sourceMappingURL=app.css.map */
