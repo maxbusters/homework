@@ -434,6 +434,7 @@ a:focus {
 }
 @media screen and (max-width: 650px) {
   .main .nav .list__el + .list__el {
+    margin-left: 0;
     margin-top: 24px;
   }
 }
