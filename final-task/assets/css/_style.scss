@@ -243,7 +243,7 @@
 
         &__title {
             @extend .logo;
-            @include font-sizes(24px, 28px);
+            font-size: 24px;
             text-align: center;
             letter-spacing: 0.1em;
             color: $white;
@@ -286,6 +286,7 @@
             &__el {
                 @include transition(.4s);
                 @include aleo(400);
+                @include font-sizes(14px 20px);
                 @include upper;
                 text-align: center;
                 letter-spacing: 0.1em;
@@ -521,10 +522,14 @@
             @include aleo(400);
             @include font-sizes(36px, 40px);
             text-align: center;
-            margin-bottom: 44px;
+            margin-bottom: 59px;
+
+            @include maxWidth(1440px) {
+                margin-bottom: 44px;
+            }
 
             @include maxWidth(800px) {
-                margin-bottom: 59px;
+                margin-bottom: 60px;
             }
         }
     }

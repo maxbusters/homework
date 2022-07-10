@@ -405,7 +405,6 @@ a:focus {
 }
 .main .nav__title {
   font-size: 24px;
-  line-height: 28px;
   text-align: center;
   letter-spacing: 0.1em;
   color: #fff;
@@ -447,6 +446,8 @@ a:focus {
   transition: all 0.4s ease;
   font-family: "Aleo", serif;
   font-weight: 400;
+  font-size: 14px 20px;
+  line-height: 24px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.1em;
@@ -668,11 +669,16 @@ a:focus {
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  margin-bottom: 44px;
+  margin-bottom: 59px;
+}
+@media screen and (max-width: 1440px) {
+  .main .steps__name {
+    margin-bottom: 44px;
+  }
 }
 @media screen and (max-width: 800px) {
   .main .steps__name {
-    margin-bottom: 59px;
+    margin-bottom: 60px;
   }
 }
 .main .book-l {
