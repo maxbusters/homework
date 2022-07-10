@@ -124,9 +124,9 @@ a:focus {
 
 .container {
     width: 70%;
-
-    @include maxWidth(1360px) {
-        width: 84%;
+    max-width: 1920px;
+    @include maxWidth(1440px) {
+        width: 85%;
     }
 
     @include maxWidth(1024px) {
