@@ -1,0 +1,80 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: auto;
+}
+
+a {
+    text-decoration: none;
+    color: $textBlack;
+}
+
+a:hover {
+    color: $orange;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    outline: none;
+    
+}
+
+input::placeholder {
+    @include montserrat(400);
+    @include font-sizes(16px, 20px);
+    color: $ligthBlue;
+    
+}
+
+.button {
+    border-radius: 4px;
+    border: 1px solid $orange;
+    background-color: $orange;
+    color: white;
+    @include montserrat(600);
+    @include font-sizes(16px, 20px);
+}
+
+.button:hover {
+    background-color: $darkOrange;
+    color: white;
+}
+
+.authorize {
+    @extend .button;
+    padding: 13px 22.5px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.text {
+    @include montserrat(500);
+    @include font-sizes(16px, 26px);
+
+    color: $textMiddleBlack;
+}
+
+.title {
+    @include montserrat(700);
+    @include font-sizes(36px, 44px);
+    margin-bottom: 20px;
+    color: $textBlack;
+}
