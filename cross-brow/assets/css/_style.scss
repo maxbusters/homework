@@ -5,13 +5,8 @@
 * Browsers: last 4 version
 */
 
-.header {
-    &__container {   
-        @extend .container;
-    } 
-}
-
 .main { 
+    height: 1000px;
     &__container {
         @extend .container;
     }
