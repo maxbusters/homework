@@ -1,0 +1,65 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+    @include transition;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+}
+
+main {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    background-color: $purple;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.button {
+    @include bebasNeue(400);
+    @include font-sizes(18px, 18px);
+    text-align: center;
+    letter-spacing: 0.04em;
+    border-radius: 30px;
+    padding: 20px 50px;
+    color: white;
+}
+
+.button:hover {
+    color: yellow;
+}

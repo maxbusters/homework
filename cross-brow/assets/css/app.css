@@ -1,0 +1,293 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+* {
+  transition: all 0.4s ease;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: auto;
+  background-color: #9789F9;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.container, .main__container, .header__container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.button, .main .box__btn {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  border-radius: 30px;
+  padding: 20px 50px;
+  color: white;
+}
+
+.button:hover, .main .box__btn:hover {
+  color: yellow;
+}
+
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+.main__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 640px;
+}
+.main__box {
+  position: relative;
+  z-index: 1;
+  margin-top: 151px;
+  margin-bottom: 122px;
+  width: 30%;
+}
+.main .box {
+  height: 640px;
+}
+.main .box__bg {
+  position: relative;
+  background-color: #F5F3F9;
+  height: 611px;
+  z-index: 1;
+}
+.main .box__bg-img {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 390px;
+  top: 170px;
+  padding-bottom: 7px;
+}
+.main .box__badge {
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.main .box__tooltip {
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  top: 25px;
+  left: 375px;
+  overflow: visible;
+}
+.main .box__heading {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 70px;
+}
+.main .box__curr {
+  font-family: "Bebas Neue Thin";
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  vertical-align: top;
+  padding-top: 10px;
+}
+.main .box__price {
+  font-family: "Bebas Neue Thin";
+  font-weight: 100;
+  font-size: 60px;
+  line-height: 53px;
+  letter-spacing: 0.08em;
+}
+.main .box__period {
+  font-family: "Bebas Neue";
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+}
+.main .box__title {
+  font-family: "Bebas Neue";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding-top: 24px;
+}
+.main .box__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+.main .box__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+.main .box .list__el {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+}
+.main .box .list__el:not(:first-child) {
+  padding-top: 30px;
+}
+.main .box__btn {
+  z-index: 3;
+  cursor: pointer;
+  position: absolute;
+  background-color: #6FCFFB;
+  bottom: 5px;
+  left: 86px;
+}
+.main .box__discount {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 18px;
+  color: #A9A9A9;
+  letter-spacing: 0.04em;
+  margin-top: 80px;
+  opacity: 0;
+}
+.main .box:hover {
+  filter: drop-shadow(0px 0px 20px #8677EF);
+  height: 673px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  width: 33.1%;
+}
+.main .box:hover .box__bg {
+  height: 100%;
+}
+.main .box:hover .box__bg-img {
+  top: 186px;
+}
+.main .box:hover .box__badge {
+  opacity: 1;
+}
+.main .box:hover .box__tooltip {
+  opacity: 1;
+}
+.main .box:hover .box__heading {
+  margin-bottom: 81px;
+}
+.main .box:hover .box__btn {
+  background-color: #FD8D7B;
+  bottom: 65px;
+  left: 101px;
+}
+.main .box:hover .box__discount {
+  margin-top: 114px;
+  opacity: 1;
+}
+.main .box:hover + .box {
+  z-index: 0;
+}/*# sourceMappingURL=app.css.map */
