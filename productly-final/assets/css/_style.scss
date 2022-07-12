@@ -148,6 +148,7 @@
         &__wrapper {
             @include flex-row;
             justify-content: space-between;
+            
         }
 
         &__left {
@@ -203,6 +204,7 @@
         &__wrapper {
             @include flex-row;
             justify-content: space-between;
+            align-items: center;
         }
         
         &__main {
