@@ -213,6 +213,7 @@ input::placeholder {
 }
 .main .intro__left {
   max-width: 500px;
+  padding-right: 30px;
 }
 .main .intro__title {
   font-family: "Montserrat";
@@ -293,6 +294,7 @@ input::placeholder {
 .main .prof__left {
   max-width: 525px;
   margin-top: 20.5px;
+  padding-right: 30px;
 }
 .main .prof__list {
   margin-top: 40px;
@@ -328,6 +330,7 @@ input::placeholder {
 }
 .main .managers__right {
   max-width: 505px;
+  padding-left: 30px;
 }
 .main .managers__title {
   margin-bottom: 20px;
@@ -366,6 +369,7 @@ input::placeholder {
   max-width: 486px;
   margin-top: 40px;
   margin-bottom: 40px;
+  padding-right: 30px;
 }
 .main .marketers__list {
   margin-top: 40px;
